@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="text_nombre">Nombre</string>
+    <string name="text_apaterno">Apellido Paterno</string>
+
+    <string name="text_amaterno">Apellido Materno</string>
+    <string name="text_fechan">Fecha de Nacimiento</string>
+    <string name="sexo_mujer">Mujer</string>
+    <string name="sexo_hombre">Hombre</string>
+    <string name="calcular_RFC">Calcular RFC</string>
+    <string name="calcular_CURP">Calcular CURP</string>
+    <string name="calcular_edad">Calcular Edad</string>
+    <string name="text_error_nombre">Falta el nombre</string>
+    <string name="text_error_general">Todos los campos son obligatorios</string>
+    <string name="text_error_amaterno">Falta el Apellido Materno</string>
+    <string name="text_error_apaterno">Falta el Apellido Paterno</string>
+    <string name="limpiar">Limpiar</string>
+</resources>

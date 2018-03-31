@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zaira.formulario.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_nombre"
+            android:id="@+id/nombre"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_apaterno"
+            android:id="@+id/apaterno"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_amaterno"
+            android:id="@+id/amaterno"/>
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="406dp"
+            android:hint="@string/text_fechan"
+            android:id="@+id/fecha_nacimiento"
+
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sexo_mujer"
+                android:id="@+id/idSexoMujer"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sexo_hombre"
+                android:id="@+id/idSexoHombre"
+                android:checked="true"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultado"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular_RFC"
+            android:id="@+id/rfc"
+            android:background="@color/colorbutton"
+            android:textColor="@color/colorButtonText"
+            android:layout_margin="10dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular_CURP"
+            android:id="@+id/curp"
+            android:background="@color/colorbutton"
+            android:textColor="@color/colorButtonText"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/limpiar"
+            android:id="@+id/limpiar"
+            android:background="@color/colorbutton"
+            android:textColor="@color/colorButtonText"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
+
