@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intento = new Intent(MainActivity.this, DetalleProductoActivity.class);
                 intento.putExtra("ropa", ropa.get(position));
+                intento.putExtra("carrito", carrito);
                 startActivityForResult(intento,12);
             }
 
@@ -99,6 +100,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         if (requestCode ==13){
+            if(resultCode == 43){
+                carrito  = (ArrayList<Productos>)  data.getSerializableExtra("objetoNuevo");
+                numero.setText("Agregados: "+String.valueOf(carrito.size()));
+            }
+        }else  if (requestCode ==12){
             if(resultCode == 43){
                 carrito  = (ArrayList<Productos>)  data.getSerializableExtra("objetoNuevo");
                 numero.setText("Agregados: "+String.valueOf(carrito.size()));
