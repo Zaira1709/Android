@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregarActivity"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/hashtagNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:hint="hashtag"
+        android:layout_margin="20dp"
+        />
+    <EditText
+        android:id="@+id/comentarioNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:hint="comentario"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:id="@+id/agregar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="20dp"
+        android:text="Agrgar"/>
+
+</LinearLayout>
